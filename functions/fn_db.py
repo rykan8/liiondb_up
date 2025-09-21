@@ -48,7 +48,7 @@ def read_data(df):
 
     elif raw_data_class == 'function':
 
-        raw_data = np.NaN
+        raw_data = np.nan
 #         print('raw_data is function')
         if type(function_binary) != type(None):
             write_file(function_binary,write_file_path)
@@ -76,7 +76,7 @@ def gui_read_data(df):
     if raw_data_class == 'value':
         raw_data = df['raw_data'][0]
     elif raw_data_class == 'function':
-        raw_data = np.NaN
+        raw_data = np.nan
         if type(function_binary) != type(None):
             write_file(function_binary,write_file_path)
             write_file(''.encode(),'/tmp/__init__.py')
